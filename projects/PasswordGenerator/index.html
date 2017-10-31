@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1>Password Generator</h1>
+<form name="myForm">
+	<h3>Choose your password length:</h3>
+		
+		<input id="minPass" type="text" minlength="8" maxlength="32" name="text" placeholder="6-32 characters">
+
+	<h3 class="genPass">Your generated password:</h3>
+	<input id="password" type="text" name="text" placeholder="your generated password">
+</form>
+<br>
+<button id="btnGen" class="btn-success btn-lg">Generate new password</button>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+	</div>
+	
+</body>
+</html>

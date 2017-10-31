@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Math Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<h2>Math Calculator  <span><i class="fa fa-calculator" aria-hidden="true"></i></span></h2>
+
+<table>
+	<!--head section -->
+	<tr>
+		<tr>
+			<td class="heading">
+				
+			</td>
+		</tr>
+
+		<td>
+			<input type="text" id="input" placeholder="0" readonly="readonly">
+			<input type="text" id="answer" readonly="readonly" style="color: green;">
+		</td>
+
+	</tr>
+	<!-- buttons -->
+	<tr>
+		<td>
+			<input id="ceBtn" type="button" value="CE" onclick="clearScreen()">
+			<input type="button" value="&#247;" onclick="getOperand('/')">
+			<input type="button" value=" x " onclick="getOperand('x')">
+			<input type="button" value=" &#8592; " onclick="backspace()" style="color: red;">
+
+			<input type="button" value="7" onclick="getNumber(7)">		
+			<input type="button" value="8" onclick="getNumber(8)">		
+			<input type="button" value="9" onclick="getNumber(9)">
+			<input id="plusBtn" type="button" value="+" onclick="getOperand('+')">
+			<br>		
+			<input type="button" value="4" onclick="getNumber(4)">		
+			<input type="button" value="5" onclick="getNumber(5)">		
+			<input type="button" value="6" onclick="getNumber(6)">
+			<input id="minusBtn" type="button" value="-" onclick="getOperand('-')">
+			<br>		
+			<input type="button" value="1" onclick="getNumber(1)">		
+			<input type="button" value="2" onclick="getNumber(2)">		
+			<input type="button" value="3" onclick="getNumber(3)">
+			<input id="brackBtn" type="button" value=" () " onclick="brackets()">
+			<br>		
+			<input type="button" value="+/-" onclick="getOperand('+/-')">		
+			<input type="button" value="0" onclick="getNumber(0)">		
+			<input type="button" value="." onclick="getOperand('.')">		
+			<input id="eqBtn" type="button" value="=" onclick="compute()">
+		</td>
+	</tr>
+
+</table>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</head>
+</html>
