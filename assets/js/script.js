@@ -29,3 +29,15 @@ $('#formCont').submit(function(e){
 		alertify.success("Wiadomość wysłana")
 	}
 });
+
+
+$(document).ready(function () {
+
+    $('*[data-animate]').addClass('down').each(function () {
+        $(this).viewportChecker({
+            classToAdd: 'show animated ' + $(this).data('animate'),
+            classToRemove: 'down',
+            offset: '20%'
+        });
+    });
+});

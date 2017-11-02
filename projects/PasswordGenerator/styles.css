@@ -28,3 +28,61 @@ background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, F
 input {
 	border-radius: 4px;
 }
+
+/*media queries*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 100%;
+        height: auto;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    input {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    form {
+        text-align: center;
+    }
+
+    input {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    form {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 2em;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    form {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .btn-lg {
+        font-size: 2em;
+    }
+
+    input {
+        width: 60%;
+    }
+}
+

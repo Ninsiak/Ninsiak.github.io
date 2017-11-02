@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <
+    <link rel="stylesheet" type="text/css" href="animate.css">
 </head>
 <body>
 <div class="row">
@@ -24,9 +26,9 @@
 
         <section class="about col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div id="inAbout">
-                <h2>O MNIE</h2>
+                <h2 data-animate="bounceInUp">O MNIE</h2>
                 <div class="pAbout col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                    <p>
+                    <p data-animate="bounceInUp">
                         Nazywam się <strong>Jacek Szmidt</strong> i pasjonuję się tworzeniem stron internetowych. Poza tworzeniem stron www, interesuję się również szeroko pojętymi finansami,
                         inwestowaniem i survivalem. Lubię czytać książki o tematyce edukacji finansowej oraz samorozwoju.
                         Obecnie mieszkam w Bielsku-Białej i poszukuję pracy jako <strong>Junior Front-End Developer</strong>. W przyszłości chciałbym zostać <strong>Full-Stack Developerem</strong>.
@@ -36,8 +38,8 @@
         </section>
         <section class="projects">
             <div class="inProjects">
-                <h2>PROJEKTY</h2>
-                <div class="portfolio">
+                <h2 data-animate="bounceInUp">PROJEKTY</h2>
+                <div class="portfolio" data-animate="bounceInUp">
                     <div class="firstProject col-lg-3 col-md-4 col-sm-6 col-xs-12">
 
                         <a href="projects/PasswordGenerator/index.html" target="_blank"><img src="pg.png" alt="password generator"></a>
@@ -52,7 +54,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+    <section data-animate="bounceInUp" class="contact">
             <h2>KONTKAT</h2>
             <div class="icons col-md-4 col-sm-4">
             <span class="git"><a target="_blank" href="https://github.com/JSzmidt1">
@@ -79,6 +81,7 @@
 </div>
 <script type="text/javascript" src="assets/js/lib/jquery-3.2.1.js"></script>
 <script type="text/javascript" src="assets/js/script.js"></script>
+<script src="jquery.viewportchecker.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
 </body>
 </html>

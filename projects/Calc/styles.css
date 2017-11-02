@@ -9,7 +9,7 @@ table{
     background-color: #66645E;
     border: none;
     border-radius: 10px;
-    padding:  0px 20px 20px;
+    padding: 0 20px 20px;
 }
 
 .heading{
@@ -27,13 +27,13 @@ table{
 }
 
 #input{
-    border-radius: 5px 5px 0px 0px;
+    border-radius: 5px 5px 0 0;
     box-shadow:1px 1px 1px black;
     color: #1e1e1e;
 }
 
 #answer{
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0 0 5px 5px;
     box-shadow: 1px 1px 1px black;
 }
 
@@ -83,4 +83,19 @@ h2{
 #ceBtn{
     color: white; 
     background: #fa8072;
+}
+
+/*media queries*/
+
+/* Portrait phones and smaller */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+}
+
+@media only screen and (max-width: 768px) and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 992px) and (max-width: 1200px) {
+
 }
