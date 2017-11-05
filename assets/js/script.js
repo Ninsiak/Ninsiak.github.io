@@ -1,4 +1,4 @@
-//to the top when refreshed
+//F5 - to the top
 // window.onbeforeunload = function() {window.scrollTo(0,0);}
 
 
@@ -10,12 +10,12 @@ $("#btn").click(function() {
 
 
 //sending email
-$('#formCont').submit(function(e){
+$('#formCont').submit(function (e, alertify) {
 	var name = document.getElementById('inputName');
 	var email = document.getElementById('inputEmail');
 	var message = document.getElementById('inputMessage');
 
-	if(!name.value == "" || !email.value || !message.value) {
+    if (!name.value === "" || !email.value || !message.value) {
 		alertify.error("Sprawdz wprowadzone dane")
 	}	else {
 		$.ajax({
@@ -24,20 +24,21 @@ $('#formCont').submit(function(e){
         data: $('#contact-form').serialize(),
         datatype: 'json'
     });
-		e.preventDefault()
-		$(this).get(0).reset()
-		alertify.success("Wiadomość wysłana")
+        e.preventDefault();
+        $(this).get(0).reset();
+        alertify.success("Wiadomość wysłana");
 	}
 });
 
 
+//animation elements
 $(document).ready(function () {
 
     $('*[data-animate]').addClass('down').each(function () {
         $(this).viewportChecker({
             classToAdd: 'show animated ' + $(this).data('animate'),
             classToRemove: 'down',
-            offset: '20%'
+            offset: '10%'
         });
     });
 });

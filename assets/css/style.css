@@ -74,16 +74,20 @@ html, body {
 }
 
 .pAbout p {
-    width: 50%;
+    width: 62%;
     font-family: 'Dosis', sans-serif;
     color: #000;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.3em;
     text-align: justify;
-    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px;
+}
+
+.pAbout p a {
+    text-decoration: none;
+    color: #d44c2f;
 }
 
 .projects {
